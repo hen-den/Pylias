@@ -11,3 +11,22 @@ will be moved to the newly created "content"-directory. This "content"-directory
 
 ## Installation
 
+### 1. Install Chromedriver on your operating system:
+**Windows:** Download the recent version of Chromedriver (https://sites.google.com/a/chromium.org/chromedriver/downloads)
+
+**Linux / MacOS:** Execute the install.sh Bashscript in the terminal.
+- Set execute permission on the script: `chmod +x install.sh`
+- Navigate to the path of the script.
+- To run the script, enter: `./install.sh`
+
+### 2. Create Pipenv and install needed packages:
+- Navigate to the project directory.
+- Create the pipenv with: `pipenv install`
+- Start pipenv with: `pipenv shell`
+- To stop pipenv use: `exit`
+
+## Usage
+- Either download to project-path: `python main.py iliasname`
+- or download to individual Path: `python main.py iliasname -p "enter//your//path//here"`
+- Your password will be asked after this command and will be used to login into Ilias HHN.
+Your Ilias **password is not stored** localy therefore it will be deleted after you finish the script.
